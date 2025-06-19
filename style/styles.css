@@ -1,0 +1,321 @@
+
+body {
+    height: 100vh;
+    font-size: 1.2rem ;
+    font-family:  "Segoe UI", Arial, sans-serif;
+    margin: 0;
+}
+
+
+nav a {
+
+    background-image: linear-gradient(
+            to right,
+            #983b2b,
+            #973b2b 50%,
+            #ffffff 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+nav a:before{
+    content: '';
+    background: #983b2b;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+}
+
+nav a:hover {
+    background-position: 0;
+}
+
+nav a:hover::before{
+    width: 100%;
+}
+
+.main-nav-section {
+    margin: 0;
+}
+
+nav .main-nav-section ul {
+    list-style-type: none;
+    display: flex;
+    padding: 10px 20px;
+    justify-content: center;
+    background-color: black;
+    margin: 0;
+}
+
+nav .main-nav-section ul li {
+    padding: 15px;
+}
+
+.main-title {
+    display: flex;
+    justify-content: center;
+}
+
+.main-content {
+    text-align: center;
+    height: 78vh;
+
+    align-content: center;
+    background-image: url("/images/main-page.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size : cover;
+    color: white;
+    text-shadow: black 2px 2px 10px;
+}
+
+.main-content  h2 {
+    font-size: 4rem;
+}
+
+
+footer {
+    background-color: black;
+    height: 15vh;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vh;
+}
+
+/*contact.html*/
+
+.main-content-contact {
+    text-align: center;
+    height: 78vh;
+
+    align-content: center;
+    background-image: url("/images/neurons-2.jpg");
+    background-repeat: repeat;
+    background-position: center;
+    background-size : 500px;
+
+    color: white;
+    text-shadow: black 1px 10px 20px;
+}
+
+.contact-via-socials {
+    display: flex;
+    justify-content: center;
+}
+
+.twitter-contact img , .instagram-contact img , .github-contact img {
+    max-width: 50px;
+}
+
+.twitter-contact  , .instagram-contact  , .github-contact  {
+    max-width: 18rem;
+    padding: 10px 50px;
+    background-color: white;
+    border-radius: 25px;
+    margin: 7px;
+}
+
+.twitter-contact:hover,
+.instagram-contact:hover,
+.github-contact:hover {
+    background-color: #178eff;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.twitter-contact:hover img,
+.instagram-contact:hover img,
+.github-contact:hover img {
+    filter: brightness(0.7);
+}
+
+.contact-via-email{
+    font-size: 2rem;
+    text-shadow: black 1px 10px 20px;
+}
+
+.contact-via-email a {
+    text-decoration: underline;
+    color: #4291f3;
+}
+.contact-via-email a:hover {
+    text-decoration: none;
+    color: #54b3d6;
+}
+
+
+/* bio.html */
+
+.main-content-bio {
+    display: flex;
+    justify-content: center;
+    height: 80vh;
+    align-items: center;
+    background-image: url("../images/ohrid.jpg");
+    background-size: cover;
+}
+
+.bio-content {
+    max-width: 50rem;
+    text-align: justify;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(70px);
+    -webkit-backdrop-filter: blur(30px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow:
+            0 8px 32px rgba(0, 0, 0, 0.1),
+            inset 0 1px 0 rgba(255, 255, 255, 0.5),
+            inset 0 -1px 0 rgba(255, 255, 255, 0.1),
+            inset 0 0 0px 0px rgba(255, 255, 255, 0);
+    position: relative;
+    overflow: auto;
+    padding: 20px 40px;
+    color: black;
+
+}
+
+
+.bio-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(
+            90deg,
+            transparent,
+            rgba(255, 255, 255, 0.8),
+            transparent
+    );
+}
+
+.main-content-hobbies {
+    justify-content: center;
+    display: flex;
+    text-align: justify;
+    background-image: url("../images/ohrid-2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+
+
+.box {
+    padding: 20px;
+    max-width: 50rem;
+}
+
+
+.hobbies-wrapper h2, #socials,  .skills-wrapper h2 {
+    width: 214px;
+    height: 47px;
+    background: rgba(255, 255, 255, 0.14);
+    backdrop-filter: blur(26px);
+    -webkit-backdrop-filter: blur(26px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow:
+            0 8px 32px rgba(0, 0, 0, 0.1),
+            inset 0 1px 0 rgba(255, 255, 255, 0.5),
+            inset 0 -1px 0 rgba(255, 255, 255, 0.1),
+            inset 0 0 0px 0px rgba(255, 255, 255, 0);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socials-text {
+    display: flex;
+    justify-content: center;
+}
+
+/* skills.html */
+
+.main-content-skills {
+    justify-content: center;
+    display: flex;
+    text-align: justify;
+    background-image: url("../images/tech.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+/*mobile*/
+
+@media (max-width: 600px) {
+    nav .main-nav-section ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    nav .main-nav-section ul li {
+        padding: 10px;
+    }
+
+    .main-content h2 {
+        font-size: 2rem;
+        padding: 0 10px;
+    }
+
+    .main-content-bio {
+        padding-top: 200px; /* adjust based on your nav height */
+        padding-bottom: 200px;
+    }
+
+    .bio-content,
+    .box {
+        padding: 15px;
+        max-width: 90%;
+    }
+
+    .hobbies-wrapper h2,
+    #socials,
+    .skills-wrapper h2 {
+        width: auto;
+        height: auto;
+        padding: 10px;
+        font-size: 1.2rem;
+    }
+
+    .contact-via-socials {
+        flex-direction: column;
+    }
+
+    .twitter-contact,
+    .instagram-contact,
+    .github-contact {
+        padding: 10px 20px;
+        margin: 5px auto;
+    }
+
+    .contact-via-email {
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+
+    footer {
+        font-size: 1.5vh;
+        padding: 10px;
+    }
+}
