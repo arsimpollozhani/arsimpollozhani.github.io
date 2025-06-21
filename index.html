@@ -23,12 +23,34 @@
 
     <section class="main-content">
         <h1>Arsim Polozhani</h1>
-        <div class="main-title"><h2>Welcome to my personal website</h2></div>
+        <div class="main-title" id="fade-text"><h1>Welcome to my personal website</h1></div>
         <p>Want to explore more about me navigate through the header links.</p>
     </section>
 
     <footer>
         <p>&copy; Arsim Polozhani. 2025</p>
     </footer>
+
+    <script>
+        const h1 = document.getElementById("fade-text");
+        const words = h1.textContent.split(" ");
+        h1.innerHTML = "";
+
+        words.forEach((word, i) => {
+            const span = document.createElement("span");
+            span.innerHTML = word + "&nbsp;";
+            span.style.transitionDelay = `${i * 300}ms`;
+            span.style.opacity = 0;
+            h1.appendChild(span);
+        });
+
+        h1.classList.add("fade-in");
+
+        setTimeout(() => {
+            h1.querySelectorAll("span").forEach(span => {
+                span.style.opacity = 1;
+            })
+        }, 100);
+    </script>
 </body>
 </html>
